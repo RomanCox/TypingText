@@ -1,0 +1,36 @@
+.app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: #000;
+}
+
+.textWrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.typingText {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0ef50e;
+}
+
+.endCursor:after {
+    content: "|";
+}
+
+.blinkingCursor:after {
+    content: "|";
+    animation: blink step-start 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+          opacity: 0;
+      }
+}
